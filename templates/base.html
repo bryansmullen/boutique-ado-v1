@@ -35,23 +35,23 @@
     {% block extrajs %}
     {% endblock extrajs %}
 
-    <title>Boutique Ado {% block extra_title %}{% endblock extracss %}</title>
+    <title>Boutique Ado {% block extra_title %}{% endblock extra_title %}</title>
 </head>
 
 <body>
     <header class="container-fluid fixed-top"></header>
     {% if messages %}
-    <div class="message-container>
+    <div class="message-container"></div>
     {% endif %}
 
-{% block page_header %}
-{% endblock page_header %}
+    {% block page_header %}
+    {% endblock page_header %}
 
-{% block content %}
-{% endblock content %}
+    {% block content %}
+    {% endblock content %}
 
-{% block postloadjs %}
-{% endblock postloadjs %}
+    {% block postloadjs %}
+    {% endblock postloadjs %}
 
 </body>
 
